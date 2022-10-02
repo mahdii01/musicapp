@@ -50,7 +50,7 @@ function musicPlaylistclick(event) {
     })
 }
 
-// let musicIndex=Math.floor((Math.random()*songs.length)+1);
+
 isMusicPaused = true;
 
 window.addEventListener("load",function () {
@@ -82,14 +82,7 @@ function pauseMusic() {
 
 
 }
-// function playListPlayLoadIndex() {
-//     $.getElementById(`${musicIndex}`).classList.remove("bi-play-fill");
-//     $.getElementById(`${musicIndex}`).classList.add("bi-pause-fill");
-// }
-// function playListPauseLoadIndex() {
-//     $.getElementById(`${musicIndex}`).classList.add("bi-play-fill");
-//     $.getElementById(`${musicIndex}`).classList.pause("bi-pause-fill");
-// }
+
 //this is for when play button in player changes, buttons of playlist must change
 function playListPlayBtn() {
     $.getElementById(`${musicNum}`).classList.remove("bi-play-fill");
