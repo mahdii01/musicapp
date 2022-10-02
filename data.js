@@ -1,0 +1,72 @@
+let songs = [
+    {
+      id: 1,
+      songName: "حالم عوض میشه",
+      artist: "شادمهر عقیلی",
+      cover: "images/shadmehr.jpg",
+      src: "audio/1.mp3",
+    },
+    {
+      id: 2,
+      songName: "تجربه کن",
+      artist: "شادمهر عقیلی",
+      cover: "images/tajrobeh.jpg",
+      src: "audio/2.mp3",
+    },
+    {
+      id: 3,
+      songName: "ای وای",
+      artist: "بابک جهانبخش",
+      cover: "images/Babak-Jahanbakhsh.jpg",
+      src: "audio/3.mp3",
+    },
+    {
+      id: 4,
+      songName: "وای دل بیقرارم",
+      artist: "بهنام بانی",
+      cover: "images/Behnam-Bani.jpg",
+      src: "audio/4.mp3",
+    },
+    {
+      id: 5,
+      songName: "یکی یدونه",
+      artist: "محسن ابراهیم زاده",
+      cover: "images/mohseneb.jpg",
+      src: "audio/5.mp3",
+    },
+    {
+      id: 6,
+      songName: "Dünya Senin",
+      artist: "ilyas Yalçıntaş",
+      cover: "images/dunya.jpg",
+      src: "audio/6.mp3",
+    },
+    {
+      id: 7,
+      songName: "easy on me",
+      artist: "adele",
+      cover: "images/easy.jpg",
+      src: "audio/7.mp3",
+    },
+    {
+      id: 8,
+      songName: "زندگی جونم",
+      artist: "علیرضا طلیسچی",
+      cover: "images/Alireza-Talischi-Zendegi-Joonam.jpg",
+      src: "audio/8.mp3",
+    },
+    {
+      id: 9,
+      songName: "قاب عکس خالی",
+      artist: "سیروان خسروی",
+      cover: "images/Sirvan-Khosravi-Ghabe-Akse-Khali.jpg",
+      src: "audio/9.mp3",
+    },
+    {
+      id: 10,
+      songName: "İçimdeki Duman",
+      artist: "İlyas Yalçıntaş",
+      cover: "images/Ilyas-Yalçıntaş-Içimdeki-Duman.jpg",
+      src: "audio/10.mp3",
+    }
+  ];
