@@ -163,7 +163,7 @@ progressArea.addEventListener('click',function (e) {
     playMusic();
 });
 
-//this is for loop shuffle music
+//this is for loop & shuffle music
 music.addEventListener('ended' ,function () {
     let getIcon = repeatBtn.className;
     switch(getIcon){
@@ -191,7 +191,8 @@ music.addEventListener('ended' ,function () {
 });
 
 playListMenuBtn.addEventListener('click',function () {
-    playlists.style.display='inline';
+    playlists.style.display='flex';
+    playlists.style.flexDirection='column';
     closePlayListBtn.style.display='block';
 })
 closePlayListBtn.addEventListener('click',function () {
