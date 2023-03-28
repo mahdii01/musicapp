@@ -116,7 +116,7 @@ const musicTimeUpdate = (event) => {
     let progressWidth = (currentTime / duration) * 100;
 
     progressBar.style.width = `${progressWidth}%`;
-    currentSec = currentSec > 10 ? currentSec : `0${currentSec}`;
+    currentSec = currentSec >= 10 ? currentSec : `0${currentSec}`;
     musicCurrentTime.innerText = `${currentMin}:${currentSec}`;
 };
 
@@ -125,7 +125,7 @@ const musicLoadData = () => {
     let totalMinMusic = Math.floor(mainAudDuration / 60);
     let totalSecMusic = Math.floor(mainAudDuration % 60);
 
-    totalSecMusic = totalSecMusic > 10 ? totalSecMusic : `0${totalSecMusic}`;
+    totalSecMusic = totalSecMusic >= 10 ? totalSecMusic : `0${totalSecMusic}`;
     musicDuration.innerText = `${totalMinMusic}:${totalSecMusic}`;
 };
 
