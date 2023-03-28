@@ -25,6 +25,7 @@ let randomBtnMusic = document.querySelector('.bi-shuffle');
 let volumeSlider = document.querySelector('.volume_slider');
 
 const removePauseAddPlay = () => {
+    playBtn = document.querySelectorAll('.playBtn');
     playBtn.forEach((btn) => {
         btn.classList.remove("bi-pause-fill");
         btn.classList.add("bi-play-fill");
