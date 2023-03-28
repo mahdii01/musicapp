@@ -1,81 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>musicapp</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="shortcut icon" href="images/favicon.png">
-</head>
-<body>
-<div class="container">
-<div class="wrapper">
-    <header>
-        <button class="hdbtn-1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>musicApp</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="shortcut icon" href="images/favicon.png" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <header>
+          <button class="hdbtn-1">
             <i class="bi bi-list"></i>
-        </button>
-        <!-- <h3 class="p-now"></h3> -->
-        <button class="hdbtn-3">
+          </button>
+          <!-- <h3 class="p-now"></h3> -->
+          <button class="hdbtn-3">
             <i class="bi bi-menu-button-wide"></i>
-        </button>
-        <button class="hdbtn-2">
+          </button>
+          <button class="hdbtn-2">
             <i class="bi bi-x"></i>
-        </button>
-
-    </header>
-    <div class="player">
-        <div class="img-area">
-            <img src="images/shadmehr.jpg" alt="shad">
-        </div>
-        <div class="song-details">
+          </button>
+        </header>
+        <div class="player">
+          <div class="img-area">
+            <img loading="lazy" src="images/shadmehr.jpg" alt="shad" />
+          </div>
+          <div class="song-details">
             <h1 class="name">حالم عوض شد</h1>
             <h1 class="artist">شادمهر</h1>
             <div class="buttons">
-                <i class="bi bi-volume-down"></i>
-                <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
-                <i class="bi bi-volume-up"></i>
-             <button class="fav-btn">
+              <i class="bi bi-volume-down"></i>
+              <input
+                type="range"
+                min="1"
+                max="100"
+                value="99"
+                class="volume_slider"
+                onchange="setVolume()"
+              />
+              <i class="bi bi-volume-up"></i>
+              <button class="fav-btn">
                 <i class="bi bi-repeat" id="repeat-btn"></i>
-             </button>
+              </button>
             </div>
-        </div>
-        <div class="audioC">
-             <div class="song-timer">
-                <span class="current-time">0:00</span>
-                <span class="max-duration">0:00</span>
-             </div>
-             <div class="progress-area">
-                <div class="progress-bar">
-                    <audio src="audio/1.mp3" id="music"></audio>
-                </div>
-             </div>
-        </div>
-        <div class="controls">
+          </div>
+          <div class="audioC">
+            <div class="song-timer">
+              <span class="current-time">0:00</span>
+              <span class="max-duration">0:00</span>
+            </div>
+            <div class="progress-area">
+              <div class="progress-bar">
+                <audio type="audio/mp3" src="audio/1.mp3" id="music"></audio>
+              </div>
+            </div>
+          </div>
+          <div class="controls">
             <button class="btnC" id="prev">
-                <i class="bi bi-rewind-fill"></i>
+              <i class="bi bi-rewind-fill"></i>
             </button>
-            <button class="play-pause btnC" >
-                <i class="bi bi-play-fill"></i>
+            <button class="play-pause btnC">
+              <i class="bi bi-play-fill"></i>
             </button>
             <button class="btnC" id="next">
-                <i class="bi bi-fast-forward-fill"></i>
+              <i class="bi bi-fast-forward-fill"></i>
             </button>
+          </div>
         </div>
+      </div>
+      <div class="playlists"></div>
+      <div class="modal"></div>
     </div>
-</div>
-<div class="playlists">
-    
-</div>
-<div class="modal">
-       
-</div> 
-</div>
-
-
-
-    <script src="data.js"></script>
-    <script src="script.js"></script>
-</body>
+    <script src="./data.js"></script>
+    <script defer src="./script.js"></script>
+  </body>
 </html>
