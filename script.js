@@ -102,7 +102,7 @@ const prevMusic = () => {
 
 const nextMusic = () => {
     musicNum++;
-	musicNum > songs.length ? musicNum = 1 : musicNum=musicNum;
+    musicNum > songs.length ? musicNum = 1 : musicNum=musicNum;
     loadMusic(musicNum);
     removePauseAddPlay();
     playMusic();
