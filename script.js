@@ -25,6 +25,7 @@ let randomBtnMusic = document.querySelector('.bi-shuffle');
 let volumeSlider = document.querySelector('.volume_slider');
 
 const removePauseAddPlay = () => {
+    playBtn = document.querySelectorAll('.playBtn');
     playBtn.forEach((btn) => {
         btn.classList.remove("bi-pause-fill");
         btn.classList.add("bi-play-fill");
@@ -115,7 +116,7 @@ const musicTimeUpdate = (event) => {
     let progressWidth = (currentTime / duration) * 100;
 
     progressBar.style.width = `${progressWidth}%`;
-    currentSec = currentSec > 10 ? currentSec : `0${currentSec}`;
+    currentSec = currentSec >= 10 ? currentSec : `0${currentSec}`;
     musicCurrentTime.innerText = `${currentMin}:${currentSec}`;
 };
 
@@ -124,7 +125,7 @@ const musicLoadData = () => {
     let totalMinMusic = Math.floor(mainAudDuration / 60);
     let totalSecMusic = Math.floor(mainAudDuration % 60);
 
-    totalSecMusic = totalSecMusic > 10 ? totalSecMusic : `0${totalSecMusic}`;
+    totalSecMusic = totalSecMusic >= 10 ? totalSecMusic : `0${totalSecMusic}`;
     musicDuration.innerText = `${totalMinMusic}:${totalSecMusic}`;
 };
 
